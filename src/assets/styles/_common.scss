@@ -1,0 +1,120 @@
+// Display Classes
+
+.d-flex {
+    display: flex;
+}
+.d-grid {
+    display: grid;
+}
+.d-none {
+    display: none;
+}
+
+// Justify Classes
+
+.justify-around {
+    justify-content: space-around;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-evently {
+    justify-content: space-evenly;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+
+// Position Classes
+
+.absolute {
+    position: absolute;
+}
+.fixed {
+    position: fixed;
+}
+.relative {
+    position: relative;
+}
+
+// Alignment
+
+.align-i-center {
+    align-items: center;
+}
+.align-i-baseline {
+    align-items: baseline;
+}
+.align-c-center {
+    align-content: center;
+}
+.align-c-baseline {
+    align-items: baseline;
+}
+
+// Placement
+.place-i-center {
+    place-items: center;
+}
+.place-c-center {
+    place-content: center;
+}
+
+// Cursor
+.pointer {
+    cursor: pointer;
+}
+
+// Margins, paddings
+
+@for $i from 1 through 15 {
+    // Margins
+    .ml-#{$i} {
+        margin-left: $i *4px;
+    }
+    .mr-#{$i} {
+        margin-right: $i * 4px;
+    }
+    .mt-#{$i} {
+        margin-top: $i * 4px;
+    }
+    .mb-#{$i} {
+        margin-bottom: $i * 4px;
+    }
+    .my-#{$i} {
+        margin-top: $i * 4px;
+        margin-bottom: $i * 4px;
+    }
+    .mx-#{$i} {
+        margin-left: $i * 4px;
+        margin-right: $i * 4px;
+    }
+
+    // Paddings
+    .pl-#{$i} {
+        margin-left: $i * 4px;
+    }
+    .pr-#{$i} {
+        margin-right: $i * 4px;
+    }
+    .pt-#{$i} {
+        margin-top: $i * 4px;
+    }
+    .pb-#{$i} {
+        margin-bottom: $i * 4px;
+    }
+    .py-#{$i} {
+        padding-top: $i * 4px;
+        padding-bottom: $i * 4px;
+    }
+    .px-#{$i} {
+        padding-left: $i * 4px;
+        padding-right: $i * 4px;
+    }
+}
